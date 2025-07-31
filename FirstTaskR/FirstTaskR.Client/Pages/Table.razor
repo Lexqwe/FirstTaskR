@@ -1,0 +1,50 @@
+﻿@page "/table"
+@using Microsoft.AspNetCore.Components.Web
+@using System.Net.Http.Json
+@using Shared.Data.Tables
+@rendermode RenderMode.InteractiveWebAssembly
+@inject HttpClient httpClient
+
+<h1>Object Types</h1>
+
+@if (isLoading)
+{
+    <p>Load...</p>
+}
+else
+{
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var object_type in object_types)
+            {
+                <tr>
+                    <td>@object_type.id</td>
+                    <td>@object_type.name</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code {
+    private List<ObjectType> object_types = new();
+    bool isLoading = true; 
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadObjectTypes();
+        isLoading = false;
+    }
+
+    async Task LoadObjectTypes()
+    {
+        object_types = await httpClient.GetFromJsonAsync<List<ObjectType>>("/api/ObjectTypes");
+    }
+}

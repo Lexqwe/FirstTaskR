@@ -1,0 +1,12 @@
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR.Shared\bin\Debug\net8.0\FirstTaskR.Shared.deps.json
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR.Shared\bin\Debug\net8.0\FirstTaskR.Shared.dll
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR.Shared\bin\Debug\net8.0\FirstTaskR.Shared.pdb
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR.Shared\obj\Debug\net8.0\FirstTaskR.Shared.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR.Shared\obj\Debug\net8.0\FirstTaskR.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR.Shared\obj\Debug\net8.0\FirstTaskR.Shared.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR.Shared\obj\Debug\net8.0\FirstTaskR.Shared.AssemblyInfo.cs
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR.Shared\obj\Debug\net8.0\FirstTaskR.Shared.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR.Shared\obj\Debug\net8.0\FirstTaskR.Shared.dll
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR.Shared\obj\Debug\net8.0\refint\FirstTaskR.Shared.dll
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR.Shared\obj\Debug\net8.0\FirstTaskR.Shared.pdb
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR.Shared\obj\Debug\net8.0\ref\FirstTaskR.Shared.dll
