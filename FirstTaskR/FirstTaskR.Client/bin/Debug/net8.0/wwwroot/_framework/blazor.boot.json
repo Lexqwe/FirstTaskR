@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "FirstTaskR.Client",
   "resources": {
-    "hash": "sha256-Z6uYIYYeE5ziDlXltWmedRwIUmGkqphZ8195Ah2Fcq8=",
+    "hash": "sha256-aBlPoGjmiKnZBIUVixvQUVkDR+vSwfs8rdOLCtNGJyo=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-1QpKPnxEuRCElzcp+e3MrovJeAJkuzqKmRQay/6Aa08="
     },
@@ -215,11 +215,11 @@
       "netstandard.wasm": "sha256-/QbD8JDZyYwfyk89W3qJL3HTAINDCVziZIySHIZcDhw=",
       "System.Private.CoreLib.wasm": "sha256-oBqNgH7R24FqGbaL3XnfQDqn3rk28jERFosgAryKT6U=",
       "FirstTaskR.Shared.wasm": "sha256-gXIgmDC8A4TlZzk/6GXT9NT/WcGh42RKGCK3lYj6zRk=",
-      "FirstTaskR.Client.wasm": "sha256-aoOQh6nR7j2fMmVGEi3aeni3Qv7BQGw135xYRx7u56w="
+      "FirstTaskR.Client.wasm": "sha256-XcecMTZk3Tu1odB2JHtaQ+3oqRY8tEBOjLYX3x7PzMA="
     },
     "pdb": {
       "FirstTaskR.Shared.pdb": "sha256-tdHjqgQmv4AGqfpCHG+cCinF/va1KVYX+WAP6jmQCSM=",
-      "FirstTaskR.Client.pdb": "sha256-3sICTBhLeQAqS48juyI+Vyne2BOwEvMvt9VMlgME4pU="
+      "FirstTaskR.Client.pdb": "sha256-wsa5cpxyXGbF7yUnU9OBQEAEKl8dultA40otY/l0ypA="
     }
   },
   "cacheBootResources": true,

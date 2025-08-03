@@ -45,6 +45,6 @@ else
 
     async Task LoadObjectTypes()
     {
-        object_types = await httpClient.GetFromJsonAsync<List<ObjectType>>("/api/ObjectTypes");
+        object_types = await httpClient.GetFromJsonAsync<List<ObjectType>>("https://localhost:7184/api/ObjectTypes");
     }
 }

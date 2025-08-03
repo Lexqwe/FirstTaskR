@@ -4,7 +4,7 @@ var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.Services.AddScoped(sp =>
     new HttpClient
     {
-        BaseAddress = new Uri("https://localhost:7196/")
+        BaseAddress = new Uri("https://localhost:7184/")
     });
 
 await builder.Build().RunAsync();

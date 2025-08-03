@@ -1064,6 +1064,7 @@ C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net
 C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net8.0\refint\FirstTaskR.Client.dll
 C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net8.0\FirstTaskR.Client.pdb
 C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net8.0\ref\FirstTaskR.Client.dll
-C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net8.0\compressed\ay37bdrp76-2pxczxaew6.gz
-C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net8.0\compressed\fcclsbsu5f-ib487d48dp.gz
-C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net8.0\compressed\8tfelpwq7q-yj5xwt1jgj.gz
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net8.0\FirstTaskR.Client.sourcelink.json
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net8.0\compressed\ay37bdrp76-bqz7gy75ld.gz
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net8.0\compressed\fcclsbsu5f-27kk21npnl.gz
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net8.0\compressed\8tfelpwq7q-krhhnz4d9o.gz

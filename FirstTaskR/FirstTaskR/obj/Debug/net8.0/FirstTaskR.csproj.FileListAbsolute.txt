@@ -188,3 +188,4 @@ C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\obj\Debug\net8.0\ref
 C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\obj\Debug\net8.0\FirstTaskR.pdb
 C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\obj\Debug\net8.0\FirstTaskR.genruntimeconfig.cache
 C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\obj\Debug\net8.0\ref\FirstTaskR.dll
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\obj\Debug\net8.0\FirstTaskR.sourcelink.json

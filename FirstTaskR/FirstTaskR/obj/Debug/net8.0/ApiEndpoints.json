@@ -1,5 +1,25 @@
 [
   {
+    "ContainingType": "FirstTaskR.api.ObjectsController",
+    "Method": "GetObjects",
+    "RelativePath": "api/Objects",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[FirstTaskR.Shared.Data.Tables.Object, FirstTaskR.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "FirstTask_rk.api.ObjectTypesController.ObjectTypesController",
     "Method": "GetTypes",
     "RelativePath": "api/ObjectTypes",
@@ -10,6 +30,66 @@
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.IEnumerable\u00601[[FirstTaskR.Shared.Data.Tables.ObjectType, FirstTaskR.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FirstTask_rk.api.WellDayHistoriesController",
+    "Method": "GetWellDayHistories",
+    "RelativePath": "api/WellDayHistories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[FirstTaskR.Shared.Data.Tables.WellDayHistory, FirstTaskR.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FirstTaskR.api.WellDayPlansController",
+    "Method": "GetWellDayPlans",
+    "RelativePath": "api/WellDayPlans",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[FirstTaskR.Shared.Data.Tables.WellDayPlan, FirstTaskR.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FirstTaskR.api.WellsController",
+    "Method": "GetWells",
+    "RelativePath": "api/Wells",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[FirstTaskR.Shared.Data.Tables.Well, FirstTaskR.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
