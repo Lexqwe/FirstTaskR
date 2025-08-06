@@ -13,7 +13,15 @@ builder.Services.AddDbContextFactory<DataContext>(options
 
 builder.Services.AddHttpClient();
 
-builder.Services.AddControllers(); 
+builder.Services.AddControllers();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowBlazor", builder => builder
+        .WithOrigins("https://localhost:5187/", "https://localhost:7184/") // Адрес Blazor
+        .AllowAnyMethod()
+        .AllowAnyHeader());
+});
 
 var app = builder.Build();
 
@@ -29,9 +37,12 @@ else
     app.UseHsts();
 }
 
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseAntiforgery();
+
+app.UseCors("AllowBlazor");
 
 app.MapControllers(); 
 

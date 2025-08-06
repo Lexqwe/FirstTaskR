@@ -10,3 +10,4 @@ C:\Users\User\source\repos\FirstTaskR\FirstTaskR.Shared\obj\Debug\net8.0\FirstTa
 C:\Users\User\source\repos\FirstTaskR\FirstTaskR.Shared\obj\Debug\net8.0\refint\FirstTaskR.Shared.dll
 C:\Users\User\source\repos\FirstTaskR\FirstTaskR.Shared\obj\Debug\net8.0\FirstTaskR.Shared.pdb
 C:\Users\User\source\repos\FirstTaskR\FirstTaskR.Shared\obj\Debug\net8.0\ref\FirstTaskR.Shared.dll
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR.Shared\obj\Debug\net8.0\FirstTaskR.Shared.sourcelink.json

@@ -7,6 +7,3 @@ C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net
 C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net8.0\staticwebassets.build.json
-C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net8.0\staticwebassets.build.json
-C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net8.0\staticwebassets.build.json
-C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net8.0\staticwebassets.build.json

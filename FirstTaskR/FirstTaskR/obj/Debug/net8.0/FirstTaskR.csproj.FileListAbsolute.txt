@@ -1,10 +1,3 @@
-C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\obj\Debug\net8.0\FirstTaskR.csproj.AssemblyReference.cache
-C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\obj\Debug\net8.0\rpswa.dswa.cache.json
-C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\obj\Debug\net8.0\FirstTaskR.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\obj\Debug\net8.0\FirstTaskR.AssemblyInfoInputs.cache
-C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\obj\Debug\net8.0\FirstTaskR.AssemblyInfo.cs
-C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\obj\Debug\net8.0\FirstTaskR.csproj.CoreCompileInputs.cache
-C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\obj\Debug\net8.0\FirstTaskR.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\bin\Debug\net8.0\FirstTaskR.Client.staticwebassets.runtime.json
 C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\bin\Debug\net8.0\FirstTaskR.Client.staticwebassets.endpoints.json
 C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\bin\Debug\net8.0\appsettings.Development.json
@@ -170,6 +163,14 @@ C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\bin\Debug\net8.0\Fir
 C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\bin\Debug\net8.0\FirstTaskR.Shared.dll
 C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\bin\Debug\net8.0\FirstTaskR.Shared.pdb
 C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\bin\Debug\net8.0\FirstTaskR.Client.pdb
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\obj\Debug\net8.0\FirstTaskR.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\obj\Debug\net8.0\FirstTaskR.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\obj\Debug\net8.0\FirstTaskR.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\obj\Debug\net8.0\FirstTaskR.AssemblyInfo.cs
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\obj\Debug\net8.0\FirstTaskR.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\obj\Debug\net8.0\FirstTaskR.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\obj\Debug\net8.0\FirstTaskR.sourcelink.json
 C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
@@ -188,4 +189,3 @@ C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\obj\Debug\net8.0\ref
 C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\obj\Debug\net8.0\FirstTaskR.pdb
 C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\obj\Debug\net8.0\FirstTaskR.genruntimeconfig.cache
 C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\obj\Debug\net8.0\ref\FirstTaskR.dll
-C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR\obj\Debug\net8.0\FirstTaskR.sourcelink.json

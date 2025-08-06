@@ -1024,7 +1024,7 @@
           "buildTransitive/Mono.TextTemplating.targets": {}
         }
       },
-      "Radzen.Blazor/7.1.6": {
+      "Radzen.Blazor/7.1.7": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components": "8.0.0",
@@ -1463,8 +1463,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "FirstTaskR.Shared": "1.0.0",
-          "Microsoft.AspNetCore.Components.WebAssembly": "8.0.18",
-          "Radzen.Blazor": "7.1.6"
+          "Microsoft.AspNetCore.Components.WebAssembly": "8.0.18"
         },
         "compile": {
           "bin/placeholder/FirstTaskR.Client.dll": {}
@@ -1477,7 +1476,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "9.0.7"
+          "Microsoft.EntityFrameworkCore": "9.0.7",
+          "Radzen.Blazor": "7.1.7"
         },
         "compile": {
           "bin/placeholder/FirstTaskR.Shared.dll": {}
@@ -3396,10 +3396,10 @@
         "readme.md"
       ]
     },
-    "Radzen.Blazor/7.1.6": {
-      "sha512": "M9AtbaTU1jW7m9IvMPGOsl7gTibgfSvdvowc4MAgEVq8HUmVIT090Dx1Dk2LjKC4llKcVgsKB77kI5gpOcdpuw==",
+    "Radzen.Blazor/7.1.7": {
+      "sha512": "Z4G4EX+mYLR5pGszSwYpg5URq1TIQwTWAOwwRHdDUslZ7K6ECNbGc5nvgNzitBRG6DyI1+YkD1P4+q4eWcEfCw==",
       "type": "package",
-      "path": "radzen.blazor/7.1.6",
+      "path": "radzen.blazor/7.1.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3419,7 +3419,7 @@
         "lib/net8.0/Radzen.Blazor.xml",
         "lib/net9.0/Radzen.Blazor.dll",
         "lib/net9.0/Radzen.Blazor.xml",
-        "radzen.blazor.7.1.6.nupkg.sha512",
+        "radzen.blazor.7.1.7.nupkg.sha512",
         "radzen.blazor.nuspec",
         "staticwebassets/Radzen.Blazor.js",
         "staticwebassets/Radzen.Blazor.min.js",

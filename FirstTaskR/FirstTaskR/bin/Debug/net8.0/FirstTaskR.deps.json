@@ -715,15 +715,15 @@
           }
         }
       },
-      "Radzen.Blazor/7.1.6": {
+      "Radzen.Blazor/7.1.7": {
         "dependencies": {
           "Microsoft.AspNetCore.Components": "8.0.18",
           "Microsoft.AspNetCore.Components.Web": "8.0.18"
         },
         "runtime": {
           "lib/net8.0/Radzen.Blazor.dll": {
-            "assemblyVersion": "7.1.6.0",
-            "fileVersion": "7.1.6.0"
+            "assemblyVersion": "7.1.7.0",
+            "fileVersion": "7.1.7.0"
           }
         }
       },
@@ -994,8 +994,7 @@
       "FirstTaskR.Client/1.0.0": {
         "dependencies": {
           "FirstTaskR.Shared": "1.0.0",
-          "Microsoft.AspNetCore.Components.WebAssembly": "8.0.18",
-          "Radzen.Blazor": "7.1.6"
+          "Microsoft.AspNetCore.Components.WebAssembly": "8.0.18"
         },
         "runtime": {
           "FirstTaskR.Client.dll": {
@@ -1006,7 +1005,8 @@
       },
       "FirstTaskR.Shared/1.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "9.0.7"
+          "Microsoft.EntityFrameworkCore": "9.0.7",
+          "Radzen.Blazor": "7.1.7"
         },
         "runtime": {
           "FirstTaskR.Shared.dll": {
@@ -1352,12 +1352,12 @@
       "path": "mono.texttemplating/3.0.0",
       "hashPath": "mono.texttemplating.3.0.0.nupkg.sha512"
     },
-    "Radzen.Blazor/7.1.6": {
+    "Radzen.Blazor/7.1.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-M9AtbaTU1jW7m9IvMPGOsl7gTibgfSvdvowc4MAgEVq8HUmVIT090Dx1Dk2LjKC4llKcVgsKB77kI5gpOcdpuw==",
-      "path": "radzen.blazor/7.1.6",
-      "hashPath": "radzen.blazor.7.1.6.nupkg.sha512"
+      "sha512": "sha512-Z4G4EX+mYLR5pGszSwYpg5URq1TIQwTWAOwwRHdDUslZ7K6ECNbGc5nvgNzitBRG6DyI1+YkD1P4+q4eWcEfCw==",
+      "path": "radzen.blazor/7.1.7",
+      "hashPath": "radzen.blazor.7.1.7.nupkg.sha512"
     },
     "SQLitePCLRaw.bundle_e_sqlite3/2.1.10": {
       "type": "package",
