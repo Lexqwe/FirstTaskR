@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\FirstTaskR\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7950D917-7699-4CEF-97EB-BD2745B16A2F}|FirstTaskR\\FirstTaskR.Client\\FirstTaskR.Client.csproj|c:\\users\\user\\source\\repos\\firsttaskr\\firsttaskr\\firsttaskr.client\\pages\\table.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7950D917-7699-4CEF-97EB-BD2745B16A2F}|FirstTaskR\\FirstTaskR.Client\\FirstTaskR.Client.csproj|solutionrelative:firsttaskr\\firsttaskr.client\\pages\\table.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Table.razor",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\FirstTaskR\\FirstTaskR\\FirstTaskR.Client\\Pages\\Table.razor",
+              "RelativeDocumentMoniker": "FirstTaskR\\FirstTaskR.Client\\Pages\\Table.razor",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\FirstTaskR\\FirstTaskR\\FirstTaskR.Client\\Pages\\Table.razor",
+              "RelativeToolTip": "FirstTaskR\\FirstTaskR.Client\\Pages\\Table.razor",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAIgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-08T11:10:14.993Z",
+              "EditorCaption": ""
             }
           ]
         }

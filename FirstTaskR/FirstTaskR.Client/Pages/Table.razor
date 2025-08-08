@@ -2,12 +2,13 @@
 @using Microsoft.AspNetCore.Components.Web
 @using System.Net.Http.Json
 @using Shared.Data.Tables
+@using Shared.Data.UI
 @using Radzen.Blazor
 @rendermode InteractiveWebAssembly
 @inject HttpClient httpClient
 
 <h1>Object Types</h1>
-
+@* 
 @if (isLoading)
 {
     <p>Load...</p>
@@ -22,16 +23,16 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach (var object_type in object_types)
+            @foreach (var Report in reports)
             {
                 <tr>
-                    <td>@object_type.id</td>
-                    <td>@object_type.name</td>
+                    <td>@Report.well</td>
+                    <td>@Report.ngdu</td>
                 </tr>
             }
         </tbody>
     </table>
-}
+} *@
 
 
 <RadzenDropDown Data=@Years
@@ -46,19 +47,27 @@ else
                 Placeholder="Выберите месяц"
                 Change="@OnFilterChange" />
 
-<RadzenDataGrid Data=@wells
-                TItem="Well"
-                AllowFiltering="true"
-                AllowPaging="true"
-                PageSize="10">
-    <Columns>
-        <RadzenDataGridColumn TItem="Well" Property="id" Title="ID" />
-        <RadzenDataGridColumn TItem="Well" Property="name" Title="Название" />
-        <RadzenDataGridColumn TItem="Well" Property="fk_type" Title="___" />
-    </Columns>
-</RadzenDataGrid>
+@if (isLoading)
+{
+    <p>Load...</p>
+}
+else
+{
+    <RadzenDataGrid Data=@reports
+                    TItem="Report"
+                    AllowFiltering="true"
+                    AllowPaging="true"
+                    PageSize="30">
+        <Columns>
+            <RadzenDataGridColumn TItem="Report" Property="well" Title="Скважина" />
+            <RadzenDataGridColumn TItem="Report" Property="ngdu" Title="НГДУ" />
+            <RadzenDataGridColumn TItem="Report" Property="cdng" Title="ЦДНГ" />
+        </Columns>
+    </RadzenDataGrid>
+}
 
 @code {
+    private List<Report> reports = new();
     private List<ObjectType> object_types = new();
     private List<Shared.Data.Tables.Object> objects = new();
     private List<Well> wells = new();
@@ -79,6 +88,7 @@ else
         await LoadWells();
         await LoadWellDayHistories();
         await LoadWellDayPlans();
+        BuildReports();
         isLoading = false;
     }
 
@@ -108,9 +118,31 @@ else
         well_day_plans = await httpClient.GetFromJsonAsync<List<WellDayPlan>>("https://localhost:7184/api/WellDayPlans");
     }
 
+    public void BuildReports()
+    {
+        foreach(var item in wells)
+        {
+            Report NewReport = new();
+            NewReport.well = objects.Single(o => o.id == item.well).name;
+            NewReport.ngdu = objects.Single(o => o.id == item.ngdu).name;
+            NewReport.cdng = objects.Single(o => o.id == item.cdng).name;
+            reports.Add(NewReport);
+        }
+    }
 
     private void OnFilterChange()
     {
 
     }
 }
+
+
+@*         
+в таблице надо будет вывести основную информацию  Месторождение, НГДУ, ЦДНГ и агрегированные данные - 1. 
+Суммарный дебит 2. Средний дебит 3. Сумарное потребление э/энергии
+
+агрегацию делать по месяцам с возможностью выбора месяца и года из выпадающего списка
+
+выпадающий список над таблицей можно сделать
+
+либо как тебе удобнее будет *@

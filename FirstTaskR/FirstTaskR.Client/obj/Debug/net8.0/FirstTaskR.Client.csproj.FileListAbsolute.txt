@@ -1063,8 +1063,8 @@ C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net
 C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net8.0\FirstTaskR.Client.pdb
 C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net8.0\ref\FirstTaskR.Client.dll
 C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net8.0\compressed\b4sx3la0e3-8x3k9hm8c1.gz
-C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net8.0\compressed\kvcddc62rt-trkyiwqpi4.gz
-C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net8.0\compressed\rlm69bfkfv-3k6q3011gz.gz
-C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net8.0\compressed\ay37bdrp76-vipb23d64c.gz
-C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net8.0\compressed\fcclsbsu5f-h2k6kb9g08.gz
-C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net8.0\compressed\8tfelpwq7q-29hwsgj9a6.gz
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net8.0\compressed\kvcddc62rt-x3jrwlm0dg.gz
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net8.0\compressed\rlm69bfkfv-9u1tfcklz2.gz
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net8.0\compressed\ay37bdrp76-me0zog8xzu.gz
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net8.0\compressed\fcclsbsu5f-4ov87to6v2.gz
+C:\Users\User\source\repos\FirstTaskR\FirstTaskR\FirstTaskR.Client\obj\Debug\net8.0\compressed\8tfelpwq7q-l10pw6ls7x.gz
