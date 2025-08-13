@@ -5,6 +5,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{7950D917-7699-4CEF-97EB-BD2745B16A2F}|FirstTaskR\\FirstTaskR.Client\\FirstTaskR.Client.csproj|c:\\users\\user\\source\\repos\\firsttaskr\\firsttaskr\\firsttaskr.client\\pages\\table.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7950D917-7699-4CEF-97EB-BD2745B16A2F}|FirstTaskR\\FirstTaskR.Client\\FirstTaskR.Client.csproj|solutionrelative:firsttaskr\\firsttaskr.client\\pages\\table.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75232C99-ADF6-4182-B1CB-B7F9B85AE807}|FirstTaskR.Shared\\FirstTaskR.Shared.csproj|c:\\users\\user\\source\\repos\\firsttaskr\\firsttaskr.shared\\data\\tables\\well_day_plans.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75232C99-ADF6-4182-B1CB-B7F9B85AE807}|FirstTaskR.Shared\\FirstTaskR.Shared.csproj|solutionrelative:firsttaskr.shared\\data\\tables\\well_day_plans.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75232C99-ADF6-4182-B1CB-B7F9B85AE807}|FirstTaskR.Shared\\FirstTaskR.Shared.csproj|c:\\users\\user\\source\\repos\\firsttaskr\\firsttaskr.shared\\firsttaskr.shared.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{75232C99-ADF6-4182-B1CB-B7F9B85AE807}|FirstTaskR.Shared\\FirstTaskR.Shared.csproj|solutionrelative:firsttaskr.shared\\firsttaskr.shared.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75232C99-ADF6-4182-B1CB-B7F9B85AE807}|FirstTaskR.Shared\\FirstTaskR.Shared.csproj|c:\\users\\user\\source\\repos\\firsttaskr\\firsttaskr.shared\\data\\ui\\reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75232C99-ADF6-4182-B1CB-B7F9B85AE807}|FirstTaskR.Shared\\FirstTaskR.Shared.csproj|solutionrelative:firsttaskr.shared\\data\\ui\\reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,10 +40,46 @@
               "RelativeDocumentMoniker": "FirstTaskR\\FirstTaskR.Client\\Pages\\Table.razor",
               "ToolTip": "C:\\Users\\User\\source\\repos\\FirstTaskR\\FirstTaskR\\FirstTaskR.Client\\Pages\\Table.razor",
               "RelativeToolTip": "FirstTaskR\\FirstTaskR.Client\\Pages\\Table.razor",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAADUAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAALQAAAAAAAAAAAAAAJ0AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-08T11:10:14.993Z",
+              "WhenOpened": "2025-08-12T11:39:59.368Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "well_day_plans.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\FirstTaskR\\FirstTaskR.Shared\\Data\\Tables\\well_day_plans.cs",
+              "RelativeDocumentMoniker": "FirstTaskR.Shared\\Data\\Tables\\well_day_plans.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\FirstTaskR\\FirstTaskR.Shared\\Data\\Tables\\well_day_plans.cs",
+              "RelativeToolTip": "FirstTaskR.Shared\\Data\\Tables\\well_day_plans.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-12T10:45:03.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "reports.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\FirstTaskR\\FirstTaskR.Shared\\Data\\UI\\reports.cs",
+              "RelativeDocumentMoniker": "FirstTaskR.Shared\\Data\\UI\\reports.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\FirstTaskR\\FirstTaskR.Shared\\Data\\UI\\reports.cs",
+              "RelativeToolTip": "FirstTaskR.Shared\\Data\\UI\\reports.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-12T10:40:53.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FirstTaskR.Shared.csproj",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\FirstTaskR\\FirstTaskR.Shared\\FirstTaskR.Shared.csproj",
+              "RelativeDocumentMoniker": "FirstTaskR.Shared\\FirstTaskR.Shared.csproj",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\FirstTaskR\\FirstTaskR.Shared\\FirstTaskR.Shared.csproj",
+              "RelativeToolTip": "FirstTaskR.Shared\\FirstTaskR.Shared.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-10T16:33:43.703Z"
             }
           ]
         }

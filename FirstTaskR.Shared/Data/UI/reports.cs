@@ -8,9 +8,9 @@
 
         public string cdng { get; set; }
 
-        public short debitSum { get; set; }
+        public int debitSum { get; set; }
 
-        public short debitAvg { get; set; }
+        public float debitAvg { get; set; }
 
         public float ee_consumeSum { get; set; }
     }

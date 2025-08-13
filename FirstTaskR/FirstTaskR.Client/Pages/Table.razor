@@ -7,44 +7,16 @@
 @rendermode InteractiveWebAssembly
 @inject HttpClient httpClient
 
-<h1>Object Types</h1>
-@* 
-@if (isLoading)
-{
-    <p>Load...</p>
-}
-else
-{
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var Report in reports)
-            {
-                <tr>
-                    <td>@Report.well</td>
-                    <td>@Report.ngdu</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-} *@
-
+<h1>Table</h1>
 
 <RadzenDropDown Data=@Years
-                @bind-Value=@Month
+                @bind-Value=@Year
                 TValue="string"
-                Placeholder="Выберите год"
                 Change="@OnFilterChange" />
 
 <RadzenDropDown Data=@Monthes
-                @bind-Value=@Year
+                @bind-Value=@Month
                 TValue="string"
-                Placeholder="Выберите месяц"
                 Change="@OnFilterChange" />
 
 @if (isLoading)
@@ -62,6 +34,9 @@ else
             <RadzenDataGridColumn TItem="Report" Property="well" Title="Скважина" />
             <RadzenDataGridColumn TItem="Report" Property="ngdu" Title="НГДУ" />
             <RadzenDataGridColumn TItem="Report" Property="cdng" Title="ЦДНГ" />
+            <RadzenDataGridColumn TItem="Report" Property="debitSum" Title="debitSum" />
+            <RadzenDataGridColumn TItem="Report" Property="debitAvg" Title="debitAvg" />
+            <RadzenDataGridColumn TItem="Report" Property="ee_consumeSum" Title="ee_consumeSum" />
         </Columns>
     </RadzenDataGrid>
 }
@@ -74,12 +49,36 @@ else
     private List<WellDayHistory> well_day_histories = new();
     private List<WellDayPlan> well_day_plans = new();
 
-    bool isLoading = true; 
-    private string Month { get; set; }
-    private string Year { get; set; }
+    bool isLoading = true;
+    private string Month { get; set; } = "---";
+    private string Year { get; set; } = "---";
 
-    private List<string> Years = new() { "2024", "2025", "2026" };
-    private List<string> Monthes = new() { "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" };
+    private List<string> Years = new() {"---", "2024", "2025", "2026" };
+    private static readonly Dictionary<string, int> YearValues = new()
+    {
+        ["---"] = 0,
+        ["2024"] = 2024,
+        ["2025"] = 2025,
+        ["2026"] = 2026
+    };
+
+    private List<string> Monthes = new() { "---","Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" };
+    private static readonly Dictionary<string, int> MonthValues = new()
+    {
+        ["---"] = 0,
+        ["Январь"] = 1,
+        ["Февраль"] = 2,
+        ["Март"] = 3,
+        ["Апрель"] = 4,
+        ["Май"] = 5,
+        ["Июнь"] = 6,
+        ["Июль"] = 7,
+        ["Август"] = 8,
+        ["Сентябрь"] = 9,
+        ["Октябрь"] = 10,
+        ["Ноябрь"] = 11,
+        ["Декабрь"] = 12
+    };
 
     protected override async Task OnInitializedAsync()
     {
@@ -88,8 +87,7 @@ else
         await LoadWells();
         await LoadWellDayHistories();
         await LoadWellDayPlans();
-        BuildReports();
-        isLoading = false;
+        OnFilterChange();
     }
 
     async Task LoadObjectTypes()
@@ -118,21 +116,83 @@ else
         well_day_plans = await httpClient.GetFromJsonAsync<List<WellDayPlan>>("https://localhost:7184/api/WellDayPlans");
     }
 
-    public void BuildReports()
-    {
-        foreach(var item in wells)
-        {
-            Report NewReport = new();
-            NewReport.well = objects.Single(o => o.id == item.well).name;
-            NewReport.ngdu = objects.Single(o => o.id == item.ngdu).name;
-            NewReport.cdng = objects.Single(o => o.id == item.cdng).name;
-            reports.Add(NewReport);
-        }
-    }
+
 
     private void OnFilterChange()
     {
+        isLoading = true;
+        reports.Clear();
+        StateHasChanged();
+        var SelectedPlans = well_day_plans.AsQueryable();
+        var SelectedHistories = well_day_histories.AsQueryable();
 
+        int MonthValue = GetMonthValue(Month);
+        int YearValue = GetYearValue(Year);
+
+        if (YearValue != 0)
+        {
+            SelectedPlans = SelectedPlans.Where(h => h.date_plan.Year == YearValue);
+            SelectedHistories = SelectedHistories.Where(p => p.date_fact.Year == YearValue);
+            if (MonthValue != 0)
+            {
+                SelectedPlans = SelectedPlans.Where(h => h.date_plan.Month == MonthValue);
+                SelectedHistories = SelectedHistories.Where(p => p.date_fact.Month == MonthValue);
+            }
+        }
+
+        List<int> SelectedWells = SelectedPlans.Select(p => p.well)
+                .Concat(SelectedHistories.Select(h => h.well))
+                .Distinct()
+                .ToList();
+
+        foreach(var item in SelectedWells)
+        {
+            Report NewReport = new();
+            var SelectedWell = wells.Single(w => w.well == item);
+            NewReport.well = objects.Single(o => o.id == item).name;
+            NewReport.ngdu = objects.Single(o => o.id == SelectedWell.ngdu).name;
+            NewReport.cdng = objects.Single(o => o.id == SelectedWell.cdng).name;
+
+            int debitSum = 0;
+            int debitAvgCount = 0;
+            float ee_consumeSum = 0;
+            foreach(var plan in SelectedPlans)
+            {
+                if(plan.well == item)
+                {
+                    debitSum += plan.debit;
+                    debitAvgCount++;
+                    ee_consumeSum += plan.ee_consume;
+                }
+            }
+            foreach (var history in SelectedHistories)
+            {
+                if (history.well == item)
+                {
+                    debitSum += history.debit;
+                    debitAvgCount++;
+                    ee_consumeSum += history.ee_consume;
+                }
+            }
+            NewReport.debitSum = debitSum;
+            if (debitAvgCount != 0)
+            {
+                NewReport.debitAvg = (float)debitSum / debitAvgCount;
+            }
+            NewReport.ee_consumeSum = ee_consumeSum;
+            reports.Add(NewReport);
+        }
+        isLoading = false;
+    }   
+
+    private int GetYearValue(string Year)
+    {
+        return YearValues.TryGetValue(Year, out int value) ? value : 0;
+    }
+
+    private int GetMonthValue(string Month)
+    {
+        return MonthValues.TryGetValue(Month, out int value) ? value : 0;
     }
 }
 
@@ -146,3 +206,4 @@ else
 выпадающий список над таблицей можно сделать
 
 либо как тебе удобнее будет *@
+
