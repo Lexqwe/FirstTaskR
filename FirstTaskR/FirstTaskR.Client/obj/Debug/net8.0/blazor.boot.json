@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "FirstTaskR.Client",
   "resources": {
-    "hash": "sha256-RzUAmoSP1sIxa0PqL0ATRTzpaY+mCM/gDSOYZ4DWDW8=",
+    "hash": "sha256-aGPK9KicdR86nPcMq/z39UqBfML0hxTAC1wvTFJ9p6c=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-1QpKPnxEuRCElzcp+e3MrovJeAJkuzqKmRQay/6Aa08="
     },
@@ -214,12 +214,12 @@
       "mscorlib.wasm": "sha256-UnQd0YPXNpwbXsKqO8RAqgUVuwZsSpprfAIPpdV/y1Q=",
       "netstandard.wasm": "sha256-/QbD8JDZyYwfyk89W3qJL3HTAINDCVziZIySHIZcDhw=",
       "System.Private.CoreLib.wasm": "sha256-oBqNgH7R24FqGbaL3XnfQDqn3rk28jERFosgAryKT6U=",
-      "FirstTaskR.Shared.wasm": "sha256-G+3RI9VeFr1YUUcyesqJDrPsDjEYovSn9HKclIq7pds=",
-      "FirstTaskR.Client.wasm": "sha256-0UDmEiCIQGxIoOnSJCk0CpbM5pVxceTNDoCKrKj/nNk="
+      "FirstTaskR.Shared.wasm": "sha256-rX1vhgkRCDowIMafPLkXP2kvf+uJwWNp0S3oVFYSkMQ=",
+      "FirstTaskR.Client.wasm": "sha256-NqwYD9k7KDeezVyjQp5LzbMkCKR0rfITjZYCoQlAbv4="
     },
     "pdb": {
-      "FirstTaskR.Shared.pdb": "sha256-8FY+5ZzvXsdBAzybg020YnT1vTA1V13leOv9ZGHkYxY=",
-      "FirstTaskR.Client.pdb": "sha256-LFZvRcg8ngyQhxNKSOrX7E/HKZU9MmpynH2B0R3jFX8="
+      "FirstTaskR.Shared.pdb": "sha256-3k6VVUeihVz804qBRV75EM/N21GshpPJEvDwBMbexwg=",
+      "FirstTaskR.Client.pdb": "sha256-duO4gzqhpetQ03q9iV3+l6yNx8lnF0Ozj0JP3ybqDSM="
     }
   },
   "cacheBootResources": true,

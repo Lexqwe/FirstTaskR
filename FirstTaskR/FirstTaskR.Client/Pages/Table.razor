@@ -42,6 +42,8 @@ else
 }
 
 @code {
+    bool isLoading = true;
+
     private List<Report> reports = new();
     private List<ObjectType> object_types = new();
     private List<Shared.Data.Tables.Object> objects = new();
@@ -49,7 +51,6 @@ else
     private List<WellDayHistory> well_day_histories = new();
     private List<WellDayPlan> well_day_plans = new();
 
-    bool isLoading = true;
     private string Month { get; set; } = "---";
     private string Year { get; set; } = "---";
 
@@ -87,7 +88,8 @@ else
         await LoadWells();
         await LoadWellDayHistories();
         await LoadWellDayPlans();
-        OnFilterChange();
+        isLoading = false;
+        await OnFilterChange();
     }
 
     async Task LoadObjectTypes()
@@ -118,11 +120,10 @@ else
 
 
 
-    private void OnFilterChange()
+    private async Task OnFilterChange()
     {
-        isLoading = true;
-        reports.Clear();
-        StateHasChanged();
+        var NewReports = new List<Report>();
+
         var SelectedPlans = well_day_plans.AsQueryable();
         var SelectedHistories = well_day_histories.AsQueryable();
 
@@ -149,40 +150,37 @@ else
         {
             Report NewReport = new();
             var SelectedWell = wells.Single(w => w.well == item);
+            NewReport.wellId = item;
             NewReport.well = objects.Single(o => o.id == item).name;
             NewReport.ngdu = objects.Single(o => o.id == SelectedWell.ngdu).name;
             NewReport.cdng = objects.Single(o => o.id == SelectedWell.cdng).name;
-
-            int debitSum = 0;
-            int debitAvgCount = 0;
-            float ee_consumeSum = 0;
-            foreach(var plan in SelectedPlans)
-            {
-                if(plan.well == item)
-                {
-                    debitSum += plan.debit;
-                    debitAvgCount++;
-                    ee_consumeSum += plan.ee_consume;
-                }
-            }
-            foreach (var history in SelectedHistories)
-            {
-                if (history.well == item)
-                {
-                    debitSum += history.debit;
-                    debitAvgCount++;
-                    ee_consumeSum += history.ee_consume;
-                }
-            }
-            NewReport.debitSum = debitSum;
-            if (debitAvgCount != 0)
-            {
-                NewReport.debitAvg = (float)debitSum / debitAvgCount;
-            }
-            NewReport.ee_consumeSum = ee_consumeSum;
-            reports.Add(NewReport);
+            NewReport.debitSum = 0;
+            NewReport.debitAvg = 0;
+            NewReport.ee_consumeSum = 0;
+            NewReports.Add(NewReport);
         }
-        isLoading = false;
+
+        foreach(var item in SelectedHistories)
+        {
+            var SelectedReport = NewReports.Single(r => r.wellId == item.well);
+            SelectedReport.debitSum += item.debit;
+            SelectedReport.countAvg++;
+            SelectedReport.debitAvg = (float)SelectedReport.debitSum / SelectedReport.countAvg;
+            SelectedReport.ee_consumeSum += item.ee_consume;
+        }
+
+        foreach (var item in SelectedPlans)
+    {
+            var SelectedReport = NewReports.Single(r => r.wellId == item.well);
+            SelectedReport.debitSum += item.debit;
+            SelectedReport.countAvg++;
+            SelectedReport.debitAvg = (float)SelectedReport.debitSum / SelectedReport.countAvg;
+            SelectedReport.ee_consumeSum += item.ee_consume;
+        }
+
+        reports = NewReports;
+
+        await InvokeAsync(StateHasChanged);
     }   
 
     private int GetYearValue(string Year)
